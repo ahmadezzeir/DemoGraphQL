@@ -6,11 +6,19 @@ namespace Api.Graph
 {
     public class ApplicationQuery : ObjectGraphType
     {
-        public ApplicationQuery(DepartmentRepository departmentRepository)
+        public ApplicationQuery(
+            DepartmentRepository departmentRepository,
+            EmployeeRepository employeeRepository
+            )
         {
             Field<ListGraphType<DepartmentType>>(
                 "departments",
                 resolve: context => departmentRepository.GetAll()
+            );
+
+            Field<ListGraphType<DepartmentType>>(
+                "employees",
+                resolve: context => employeeRepository.GetAll()
             );
         }
     }
