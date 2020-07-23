@@ -15,7 +15,7 @@ namespace Api.Graph.Types
             Field(t => t.Name).Description("The name of the department");
             Field(t => t.Created);
             Field(t => t.CreatedBy);//.Description("When the product was first introduced in the catalog");
-            //Field(t => t.Updated);//.Description("The file name of the photo so the client can render it");
+            Field(t => t.Updated,true);//.Description("The file name of the photo so the client can render it");
             Field(t => t.UpdatedBy);
             //Field<DepartmentType>("Type", "The type of product");
         }
