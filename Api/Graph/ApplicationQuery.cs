@@ -16,7 +16,7 @@ namespace Api.Graph
                 resolve: context => departmentRepository.GetAll()
             );
 
-            Field<ListGraphType<Types.EmployeeType>>(
+            Field<ListGraphType<EmployeeType>>(
                 "employees",
                 resolve: context => employeeRepository.GetAll()
             );
