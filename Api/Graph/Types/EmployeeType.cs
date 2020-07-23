@@ -12,12 +12,12 @@ namespace Api.Graph.Types
         public EmployeeType()
         {
             Field(t => t.Id);
-            Field(t => t.Name).Description("The name of the department");
+            Field(t => t.Name).Description("The name of the employee");
             Field(t => t.Created);
             Field(t => t.CreatedBy);//.Description("When the product was first introduced in the catalog");
-            Field(t => t.Updated,true);//.Description("The file name of the photo so the client can render it");
+            //Field(t => t.Updated,true);//.Description("The file name of the photo so the client can render it");
             Field(t => t.UpdatedBy);
-            //Field<DepartmentType>("Type", "The type of product");
+            //Field<EnumTypes.EmployeeTypes>("EmployeeType", "Employee Type");
         }
     }
 }

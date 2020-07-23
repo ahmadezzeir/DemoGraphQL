@@ -21,9 +21,9 @@ namespace Api.Data.Entities
 
     public enum EmployeeTypes
     {
-         Type1
-        ,Type2
-        ,Type3
+        Type1,
+        Type2,
+        Type3
 
     }
 }
