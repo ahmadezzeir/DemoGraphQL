@@ -15,9 +15,9 @@ namespace Api.Repositories
             _dbContext = dbContext;
         }
 
-        public Task<List<Department>> GetAll()
+        public Task<List<Employee>> GetAll()
         {
-            return _dbContext.Departments.ToListAsync();
+            return _dbContext.Employees.ToListAsync();
         }
     }
 }
