@@ -24,8 +24,14 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("GraphQL")));
+
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("GraphQL")));
+                options.UseNpgsql(Configuration.GetConnectionString("GraphQLPost")));
+
+
             services.AddScoped<ApplicationDbContext>();
 
             services.AddScoped<DepartmentRepository>();
