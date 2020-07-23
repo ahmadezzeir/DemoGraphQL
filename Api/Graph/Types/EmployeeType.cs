@@ -1,4 +1,5 @@
 ﻿using Api.Data.Entities;
+using Api.Graph.Enums;
 using GraphQL.Types;
 
 namespace Api.Graph.Types
@@ -13,7 +14,7 @@ namespace Api.Graph.Types
             Field(t => t.CreatedBy);//.Description("When the product was first introduced in the catalog");
             Field(t => t.Updated, true);//.Description("The file name of the photo so the client can render it");
             Field(t => t.UpdatedBy);
-            Field<>("Type", "The type of product");
+            Field<EmployeeTypeEunm>("EmployeeType", "Employee Type");
         }
     }
 }
