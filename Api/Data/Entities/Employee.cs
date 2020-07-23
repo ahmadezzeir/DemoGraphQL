@@ -16,5 +16,14 @@ namespace Api.Data.Entities
 
         public string CreatedBy { get; set; }
         public string UpdatedBy { get; set; }
+        public EmployeeTypes EmployeeType { get; set; }
+    }
+
+    public enum EmployeeTypes
+    {
+         Type1
+        ,Type2
+        ,Type3
+
     }
 }

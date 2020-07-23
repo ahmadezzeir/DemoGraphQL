@@ -40,7 +40,8 @@ namespace Api.Data
                     //Id = 1,
                     Created = DateTime.Now,
                     CreatedBy = "Ahmad",
-                    DepartmentId = 1
+                    DepartmentId = 1,
+                    EmployeeType = EmployeeTypes.Type1
                 });
                 dbContext.Employees.Add(new Employee
                 {
@@ -48,7 +49,8 @@ namespace Api.Data
                     //Id = 1,
                     Created = DateTime.Now,
                     CreatedBy = "Ahmad",
-                    DepartmentId = 2
+                    DepartmentId = 2,
+                    EmployeeType = EmployeeTypes.Type1
                 });
                 dbContext.Employees.Add(new Employee
                 {
@@ -64,7 +66,8 @@ namespace Api.Data
                     //Id = 1,
                     Created = DateTime.Now,
                     CreatedBy = "Ahmad",
-                    DepartmentId = 2
+                    DepartmentId = 2,
+                    EmployeeType = EmployeeTypes.Type2
                 });
                 dbContext.Employees.Add(new Employee
                 {
@@ -72,7 +75,8 @@ namespace Api.Data
                     //Id = 1,
                     Created = DateTime.Now,
                     CreatedBy = "Ahmad",
-                    DepartmentId = 2
+                    DepartmentId = 2,
+                    EmployeeType = EmployeeTypes.Type3
                 });
 
                 dbContext.SaveChanges();
